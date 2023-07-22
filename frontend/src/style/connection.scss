@@ -1,0 +1,72 @@
+.connection_container {
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  color: #762b18;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-family-primary;
+
+  .connection_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 15px;
+    margin-bottom: 12px;
+  }
+
+  .connection_form {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    input {
+      border: none;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      margin-bottom: 1.5em;
+      padding-bottom: 0.5em;
+      background-color: #f8c596;
+      border-color: #b93c15;
+      &::placeholder {
+        color: #933119;
+      }
+    }
+    :focus {
+      outline: none;
+      border-color: #fdebd7;
+    }
+  }
+
+  .connection_form_error {
+    color: red;
+    margin: 5px 0;
+  }
+
+  .error {
+    color: red;
+    margin: 10px 0;
+  }
+
+  .connection_form_button {
+    background-color: #933119;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fdebd7;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .connection_form_button:hover {
+    background-color: #ed6a22;
+  }
+}
